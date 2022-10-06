@@ -9,15 +9,15 @@ function newItem() {
     $('#list').append(li);
     }
 
-    /*function crossOut(){
-    li.addClass("strike");
+    function crossOut(){
+    li.toggleClass("strike");
     }
-    li.on("dblclick", crossOut);*/
+    li.on("dblclick", crossOut);
 
     // dblclick = double click vs click just ones
-    li.on("dblclick", function() {
+    /*li.on("dblclick", function() {
         li.addClass("strike");
-      });
+      });*/
 
     $('#list').sortable();
 
